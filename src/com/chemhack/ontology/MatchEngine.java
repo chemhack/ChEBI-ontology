@@ -17,7 +17,7 @@ public class MatchEngine {
         String[] classNames=new String[]{"hydrocarbon"};
         for(String className : classNames){
             IteratingMDLReader reader=new IteratingMDLReader(new FileReader(System.getProperty("user.dir")+("/src/com/chemhack/ontology/testset/hydrocarbon_negative.sdf")), DefaultChemObjectBuilder.getInstance());
-            PropertyMatcher matcher=new FormulaMatcher("OK");
+            PropertyMatcher matcher=new FormulaMatcher();
             while(reader.hasNext()){
                 IAtomContainer ac= (IAtomContainer) reader.next();
                 try {

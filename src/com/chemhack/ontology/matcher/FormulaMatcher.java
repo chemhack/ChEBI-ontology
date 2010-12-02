@@ -14,9 +14,6 @@ import java.util.List;
 import java.util.Map;
 
 public class FormulaMatcher extends PropertyMatcher {
-    public FormulaMatcher(String pattern){
-        
-    }
 
     public boolean matches(IAtomContainer ac) {
         IMolecularFormula formula=getFormulaWithH(ac);
