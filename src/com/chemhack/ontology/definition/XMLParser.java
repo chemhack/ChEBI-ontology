@@ -5,6 +5,7 @@ import com.chemhack.ontology.matcher.FormulaMatcher;
 import com.chemhack.ontology.matcher.IMatcher;
 import com.chemhack.ontology.matcher.logical.AndMatcher;
 import com.chemhack.ontology.matcher.skeleton.FragmentMatcher;
+import com.chemhack.ontology.matcher.skeleton.RGroupMatcher;
 import com.chemhack.ontology.matcher.skeleton.SubStructureMatcher;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -133,6 +134,8 @@ public class XMLParser {
             FragmentMatcher fragmentMatcher = null;
             if (this.getNodeAttribute(node, "match_type").equals("substructure")) {
                 fragmentMatcher = new SubStructureMatcher();
+            }else if (this.getNodeAttribute(node, "match_type").equals("rgroup")) {
+                fragmentMatcher = new RGroupMatcher();
             }
             if (fragmentMatcher != null) {
                 fragmentMatcher.readQueryStructure(this.getNodeAttribute(node, "file_format"), node.getTextContent());
