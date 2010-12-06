@@ -26,6 +26,8 @@
     <!ATTLIST fragment file_format (smiles|molfile|smarts|rgfile) #REQUIRED>
     <!ATTLIST fragment match_type (exact|substructure|rgroup|smarts) #REQUIRED>
 
-    <!--Ring matcher, to be finished-->
+    <!--Ring matcher, need to think more about that-->
     <!ELEMENT ring ANY>
+    <!ATTLIST ring size CDATA "any">
+    <!ATTLIST ring count CDATA "any">
 ]>

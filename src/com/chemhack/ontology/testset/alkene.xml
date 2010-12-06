@@ -1,4 +1,5 @@
-<definition id="alkene" chebi_id="32878" comment="An acyclic branched or unbranched hydrocarbon having one carbon-carbon double bond and the general formula CnH2n. Acyclic branched or unbranched hydrocarbons having more than one double bond are alkadienes, alkatrienes, etc.">
+<definition id="alkene" chebi_id="32878"
+            comment="An acyclic branched or unbranched hydrocarbon having one carbon-carbon double bond and the general formula CnH2n. Acyclic branched or unbranched hydrocarbons having more than one double bond are alkadienes, alkatrienes, etc.">
     <and>
         <formula exclude_others="true">
             <element symbol="C"/>
@@ -7,4 +8,4 @@
         <ring count="0"/>
         <fragment file_format="smiles" match_type="substructure">C=C</fragment>
     </and>
-</definition>
+</definition>           
