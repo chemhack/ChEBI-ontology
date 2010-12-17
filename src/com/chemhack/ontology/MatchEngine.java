@@ -23,7 +23,7 @@ public class MatchEngine {
                 try {
                     AtomContainerManipulator.percieveAtomTypesAndConfigureAtoms(ac);
                     CDKHueckelAromaticityDetector.detectAromaticity(ac);
-                    matcher.matches(ac);                    
+                    matcher.matches(ac);
                 } catch (CDKException e) {
                     e.printStackTrace(); 
                 }

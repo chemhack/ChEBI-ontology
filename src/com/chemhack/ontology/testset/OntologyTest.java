@@ -41,7 +41,7 @@ public abstract class OntologyTest extends TestCase {
                 AtomContainerManipulator.percieveAtomTypesAndConfigureAtoms(ac);
                 CDKHueckelAromaticityDetector.detectAromaticity(ac);
                 if(matcher!=null){
-                    assertEquals(matcher.matches(ac),isMatch);                    
+                    assertEquals(isMatch,matcher.matches(ac));                    
                 }
             } catch (CDKException e) {
                 e.printStackTrace();
