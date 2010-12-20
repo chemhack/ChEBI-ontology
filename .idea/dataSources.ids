@@ -1,0 +1,13 @@
+<?xml version="1.0"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="HSQL Database Engine" version="2.0.0" jdbc-version="4.0" driver-version="2.0.0" uuid="462ad35a-f36e-493d-b08e-5b73ff96e91e">
+    <identifier-quote-string>"</identifier-quote-string>
+    <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+    <jdbc-url>jdbc:hsqldb:mem:ontology</jdbc-url>
+    <default-dialect>HSQLDB</default-dialect>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/lib/hsqldb-2.0.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
